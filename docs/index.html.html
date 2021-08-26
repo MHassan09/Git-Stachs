@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background: sienna;
+            color:white;
+        }
+        .outer > li {
+            display: inline-block;
+            list-style-type: none;
+            margin-left: 50px;
+        }
+        .m-menu:hover .inner{
+            display: list-item;
+        }
+        .inner li:hover{
+            background: black;
+            cursor: pointer;
+        }
+        .inner{
+            list-style-type: none;
+            position: absolute;
+            background: sienna;
+            padding: 10px;
+            display: none;
+            /* top:80px; */
+        }
+        .m-inner{
+            list-style-type: none;
+            position: absolute;
+            left:50px;
+            padding:10px; 
+            display: none;
+            background: sienna;
+        }
+        .mn-menu:hover .m-inner{
+            display: list-item;
+        }
+    </style>
+  </head>
+<body>
+    <nav>
+        <ol class="outer">
+            <li class="m-menu">Provinces
+                <ol class="inner">
+                    <li class="mn-menu">Punjab
+                        <ol class="m-inner">
+                            <li>Faisalabad</li>
+                            <li>Lahore</li>
+                            <li>Gojra</li>
+                            <li>MUltan</li>
+                        </ol>
+                    </li>
+                    <li>NWFP</li>
+                    <li>Sindh</li>
+                    <li>Balochistan</li>
+                </ol>
+
+            </li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Signup</li>
+        </ol>
+    </nav>
+</body>
